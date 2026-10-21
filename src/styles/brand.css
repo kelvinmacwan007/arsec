@@ -1,0 +1,1140 @@
+/* Arsec identity. Primary green matches the supplied logo exactly. */
+:root {
+  --brand-green: #66bf83;
+  --brand-tint: #edf8f0;
+  --brand-ink: #12291d;
+  --brand-text-green: #24613a;
+  --product-accent: var(--brand-green);
+  --product-tint: var(--brand-tint);
+  --mint: var(--brand-green);
+  --lime: var(--brand-green);
+  --accent: var(--brand-text-green);
+  --green: var(--brand-ink);
+}
+::selection {
+  background: var(--brand-green);
+  color: var(--brand-ink);
+}
+:is(a, button, input, textarea, summary, select):focus-visible {
+  outline-color: var(--brand-text-green);
+}
+.nav {
+  height: 82px;
+}
+.logo .full-brand-logo,
+.footer-brand .logo .full-brand-logo {
+  width: 145px;
+  height: 34px;
+}
+.nav-parent {
+  font-weight: 500;
+  font-size: 14px;
+}
+.nav-cta {
+  background: var(--brand-green);
+  border-color: var(--brand-green);
+  color: var(--brand-ink);
+  font-weight: 700;
+  font-size: 12px;
+  padding: 13px 20px;
+  border-radius: 7px;
+}
+.nav-cta:hover {
+  background: #78ca93;
+}
+.mega-menu {
+  top: 82px;
+  border-top: 3px solid var(--brand-green);
+}
+.mega-intro {
+  background: var(--brand-tint);
+}
+.mega-links > a:hover,
+.mega-links > a[aria-current="page"] {
+  color: var(--brand-text-green);
+  font-weight: 500;
+}
+.nav-scrim {
+  inset: 82px 0 0;
+}
+.button {
+  background: var(--brand-green);
+  color: var(--brand-ink);
+  font-weight: 700;
+}
+.button:hover {
+  background: #78ca93;
+}
+.section-label,
+.text-link {
+  color: var(--brand-text-green);
+}
+.brand-dot {
+  color: var(--brand-green);
+}
+.inner-hero {
+  background: var(--brand-tint);
+}
+.inner-hero h1 {
+  font-weight: 700;
+}
+.inner-motif i {
+  border-color: var(--brand-green);
+}
+.inner-motif i:nth-child(3) {
+  background: #ccebd6;
+}
+.page-card:hover {
+  border-color: var(--brand-green);
+  background: #f6fbf7;
+}
+.page-card h3 {
+  font-weight: 700;
+}
+.contact {
+  background: var(--brand-ink);
+  color: #fff;
+  border-radius: 20px;
+}
+.contact h2 {
+  color: #fff;
+  font-weight: 700;
+}
+.contact .section-label {
+  color: var(--brand-green);
+}
+.contact p {
+  color: #c0d1c5;
+}
+.contact .button {
+  background: var(--brand-green);
+  color: var(--brand-ink);
+}
+.contact-decoration {
+  color: var(--brand-green);
+  opacity: 0.18;
+}
+.footer-columns h4 {
+  font-weight: 700;
+}
+.saas-product {
+  --product-accent: var(--brand-green);
+  --product-tint: var(--brand-tint);
+}
+.saas-product h1,
+.saas-product h2,
+.saas-product h3 {
+  font-weight: 700;
+}
+.saas-product h2 {
+  font-size: clamp(36px, 3.6vw, 50px);
+  letter-spacing: -1.8px;
+  line-height: 1.1;
+}
+.saas-product p {
+  color: #596a61;
+}
+.saas-kicker {
+  color: var(--brand-text-green);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+}
+.saas-button {
+  padding: 17px 25px;
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 13px;
+}
+.saas-button.primary {
+  background: var(--brand-green);
+  color: var(--brand-ink);
+  border-color: var(--brand-green);
+}
+.saas-button.primary:hover {
+  background: #78ca93;
+  box-shadow: 0 8px 22px #66bf8335;
+}
+.saas-button.secondary {
+  color: var(--brand-ink);
+  border-color: #cad6cd;
+  border-width: 1px;
+}
+.saas-text-link,
+.product-back-link,
+.product-nav-demo {
+  color: var(--brand-text-green);
+  font-weight: 700;
+}
+.suite-hero {
+  margin-top: 24px;
+  padding: 80px 45px 70px;
+  border-radius: 24px;
+  background: var(--brand-ink);
+  isolation: isolate;
+  overflow: hidden;
+}
+.suite-hero:before {
+  content: "";
+  position: absolute;
+  left: -180px;
+  bottom: -300px;
+  width: 450px;
+  height: 450px;
+  border: 1px solid #66bf8326;
+  border-radius: 50%;
+  z-index: -1;
+}
+.suite-hero:after {
+  content: "";
+  position: absolute;
+  left: -220px;
+  bottom: -340px;
+  width: 530px;
+  height: 530px;
+  border: 1px solid #66bf831a;
+  border-radius: 50%;
+  z-index: -1;
+}
+.hero-brand-art {
+  position: absolute;
+  right: -55px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-8deg);
+  width: 440px;
+  height: 440px;
+  opacity: 0.09;
+  z-index: -1;
+  pointer-events: none;
+}
+.hero-brand-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.suite-hero-label {
+  color: #b8dcc3;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  padding: 8px 13px;
+  background: #66bf8310;
+  border: 1px solid #66bf8330;
+  border-radius: 30px;
+}
+.suite-hero-label > i {
+  background: var(--brand-green);
+  width: 7px;
+  height: 7px;
+  box-shadow: 0 0 0 4px #66bf8315;
+}
+.suite-hero h1 {
+  color: #fff;
+  font-size: clamp(58px, 7.1vw, 98px);
+  font-weight: 700;
+  letter-spacing: -4px;
+  line-height: 1.01;
+  margin: 30px 0 25px;
+}
+.suite-hero h1 > span {
+  color: var(--brand-green);
+}
+.suite-hero > p {
+  color: #bdcec3;
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 650px;
+  margin-inline: auto;
+}
+.suite-hero .saas-actions {
+  margin-top: 32px;
+  gap: 14px;
+}
+.suite-hero .saas-button.secondary {
+  background: #ffffff06;
+  color: #fff;
+  border-color: #ffffff30;
+}
+.suite-hero .saas-button.secondary:hover {
+  background: #ffffff12;
+}
+.suite-hero-line {
+  margin-top: 35px;
+  gap: 7px;
+}
+.suite-hero-line > i {
+  background: var(--brand-green) !important;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  opacity: 0.35;
+}
+.suite-hero-line > i:first-child {
+  opacity: 1;
+}
+.suite-hero-line > i:nth-child(2) {
+  opacity: 0.75;
+}
+.suite-hero-line > i:nth-child(3) {
+  opacity: 0.5;
+}
+.suite-product-cards {
+  margin-top: 30px;
+  gap: 20px;
+}
+.suite-product-card {
+  border-color: #dce8df;
+  border-radius: 14px;
+  border-top: 4px solid var(--brand-green);
+  padding: 27px 23px 22px;
+  box-shadow: 0 7px 22px #173b2205;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s,
+    border-color 0.2s;
+}
+.suite-product-card:hover {
+  border-color: var(--brand-green);
+  transform: translateY(-7px);
+  box-shadow: 0 16px 35px #21422c13;
+}
+.product-mark {
+  background: var(--brand-green);
+  color: var(--brand-ink);
+  border-radius: 10px;
+}
+.suite-card-top .product-mark {
+  width: 53px;
+  height: 53px;
+  border-radius: 12px;
+}
+.suite-card-arrow {
+  color: var(--brand-ink);
+  border-color: #dce8df;
+  background: #f7fbf8;
+  width: 30px;
+  height: 30px;
+}
+.suite-product-card:hover .suite-card-arrow {
+  background: var(--brand-green);
+  border-color: var(--brand-green);
+}
+.suite-product-card h2 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+.suite-card-label {
+  color: #667f6e;
+  font-size: 9px;
+  font-weight: 500;
+}
+.suite-product-card > p {
+  color: #556e5d;
+  font-size: 13px;
+}
+.suite-card-link {
+  color: var(--brand-text-green);
+  font-size: 11px;
+  font-weight: 700;
+}
+.mini-product {
+  background: var(--brand-tint);
+  border: 1px solid #dbeddf;
+  height: 155px;
+}
+.mini-cols > div > span,
+.mini-cols i {
+  color: #668571;
+}
+.mini-cols b {
+  background: #c9e9d3;
+}
+.mini-people-title,
+.mini-people-title > span {
+  color: #5c8468;
+}
+.mini-avatars > span {
+  background: #d3eddb;
+  color: #326544;
+}
+.mini-email {
+  border-color: #d7eadc;
+}
+.mini-email > span,
+.mini-email > b {
+  color: #4f7f5e;
+}
+.mini-email small {
+  background: var(--brand-green);
+  color: var(--brand-ink);
+}
+.mini-pay > span,
+.mini-pay > small {
+  color: #75947c;
+}
+.mini-pay > strong {
+  color: var(--brand-ink);
+  font-weight: 700;
+}
+.mini-pay i {
+  background: var(--brand-green);
+}
+.mini-pay > span > b {
+  background: #d8eedf;
+  color: var(--brand-text-green);
+}
+.suite-preview-section .saas-section-heading {
+  margin-bottom: 45px;
+}
+.suite-preview-tabs > button {
+  font-weight: 700;
+  color: #5e7867;
+  border-radius: 7px;
+  border-color: #d9e6dc;
+  padding: 13px 24px;
+}
+.suite-preview-tabs > button[aria-selected="true"] {
+  background: var(--brand-green);
+  color: var(--brand-ink);
+  border-color: var(--brand-green);
+  box-shadow: 0 4px 10px #66bf8325;
+}
+.suite-preview-bottom > p {
+  color: #6b7f70;
+}
+.suite-values {
+  background: var(--brand-green);
+  border: 0;
+  padding: 85px 0;
+}
+.suite-values .saas-kicker {
+  color: #234c31;
+}
+.suite-values h2 {
+  font-size: clamp(35px, 3.8vw, 52px);
+  color: var(--brand-ink);
+  font-weight: 700;
+}
+.suite-value-grid article {
+  border-top: 1px solid #12291d30;
+  padding-top: 25px;
+}
+.suite-value-grid article > svg {
+  color: var(--brand-ink);
+  margin-bottom: 20px;
+}
+.suite-value-grid h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--brand-ink);
+}
+.suite-value-grid p {
+  color: #2d583a;
+  font-size: 14px;
+}
+.home-services-clean h2 {
+  font-size: 43px;
+  font-weight: 700;
+}
+.home-services-clean > div > p {
+  color: #687c6e;
+  font-size: 14px;
+}
+.home-services-clean > div + div > a {
+  font-weight: 500;
+  color: var(--brand-ink);
+  font-size: 18px;
+  padding: 27px 0;
+  border-color: #dce7de;
+}
+.home-services-clean > div + div > a > svg {
+  color: var(--brand-text-green);
+}
+.home-services-clean > div + div > a:hover {
+  color: var(--brand-text-green);
+  padding-left: 8px;
+}
+.product-subnav {
+  top: 82px;
+  border-bottom-color: #dfe9e2;
+}
+.product-name b {
+  font-weight: 700;
+}
+.product-subnav nav {
+  font-weight: 500;
+  color: #58715f;
+}
+.product-subnav nav a:hover {
+  color: var(--brand-text-green);
+}
+.product-subnav .product-mark {
+  background: var(--brand-green);
+  color: var(--brand-ink);
+}
+.product-hero {
+  padding-top: 65px;
+  padding-bottom: 60px;
+}
+.product-eyebrow {
+  color: var(--brand-text-green);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.product-eyebrow > span:first-child {
+  background: var(--brand-green);
+  box-shadow: 0 0 0 4px var(--brand-tint);
+}
+.product-hero h1 {
+  font-size: clamp(42px, 5.3vw, 74px);
+  font-weight: 700;
+  letter-spacing: -2.8px;
+  line-height: 1.06;
+  margin: 28px 0;
+}
+.product-hero h1 > .accent-line {
+  color: var(--brand-ink);
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
+  background: linear-gradient(
+    transparent 72%,
+    #66bf8360 72%,
+    #66bf8360 96%,
+    transparent 96%
+  );
+  padding-inline: 7px;
+}
+.product-hero > p {
+  font-size: 17px;
+  color: #637a6b;
+}
+.hero-assurance {
+  font-size: 11px;
+  color: #647e6d;
+}
+.hero-assurance svg {
+  color: var(--brand-text-green);
+}
+.dashboard-section:before {
+  background: #d9f1e0;
+  border: 1px solid #c9e7d2;
+  inset: 35px -24px 60px;
+  border-radius: 20px;
+}
+.dashboard-top-label {
+  color: #54735e;
+  font-weight: 500;
+}
+.dashboard-top-label > span + span {
+  color: var(--brand-text-green);
+}
+.dashboard-caption {
+  color: #607c68 !important;
+}
+.product-dashboard {
+  border: 1px solid #cadfd1;
+  border-radius: 12px;
+  box-shadow: 0 20px 55px #153d2415;
+}
+.app-window-bar {
+  background: #f1f8f3;
+  border-bottom-color: #dceade;
+}
+.app-product-logo > span {
+  color: var(--brand-text-green);
+}
+.app-product-logo b {
+  font-weight: 700;
+  color: var(--brand-ink);
+}
+.app-side-tabs > button[aria-selected="true"] {
+  background: #dff2e5;
+  color: var(--brand-ink);
+  font-weight: 700;
+  box-shadow: inset 3px 0 0 var(--brand-green);
+}
+.app-page-heading h3 {
+  font-weight: 700;
+}
+.app-stats > div:first-child {
+  background: #e4f5e9;
+  border-color: #d4ecdc;
+}
+.app-stats strong {
+  font-weight: 700;
+  color: var(--brand-ink);
+}
+.app-toolbar h4,
+.app-panel-heading h4 {
+  font-weight: 700;
+}
+.app-primary {
+  background: var(--brand-green);
+  color: var(--brand-ink);
+  font-weight: 700;
+}
+.app-notice {
+  background: #e6f5ea;
+  color: var(--brand-text-green);
+}
+.app-search:focus-within {
+  outline-color: var(--brand-text-green);
+}
+.candidate-footer button,
+.table-action,
+.payroll-total > button {
+  color: var(--brand-text-green);
+  font-weight: 500;
+}
+.email-cta {
+  background: var(--brand-green);
+  color: var(--brand-ink);
+  font-weight: 700;
+}
+.payslip-net strong {
+  color: var(--brand-ink);
+  font-weight: 700;
+}
+.payslip-person.selected {
+  background: #e3f3e8;
+}
+.product-benefit-strip {
+  padding-block: 60px;
+}
+.product-benefit-strip h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--brand-ink);
+}
+.product-benefit-strip p {
+  color: #6a8272;
+  font-size: 11px;
+}
+.benefit-check {
+  color: var(--brand-ink);
+  background: var(--brand-green);
+}
+.product-features {
+  background: #f5faf6;
+  border-color: #e4efe7;
+}
+.saas-feature-grid {
+  gap: 24px;
+}
+.saas-feature-grid > article {
+  background: #fff;
+  border: 1px solid #deebe2;
+  border-radius: 13px;
+  padding: 30px;
+  transition:
+    border-color 0.2s,
+    transform 0.2s;
+}
+.saas-feature-grid > article:hover {
+  border-color: var(--brand-green);
+  transform: translateY(-4px);
+}
+.feature-icon {
+  background: var(--brand-green);
+  color: var(--brand-ink);
+  border-color: var(--brand-green);
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+}
+.saas-feature-grid h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.saas-feature-grid p {
+  color: #647d6c;
+  font-size: 13px;
+}
+.workflow-list > article > span {
+  background: var(--brand-green);
+  color: var(--brand-ink);
+  font-weight: 700;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+  font-size: 12px;
+}
+.workflow-list h3 {
+  font-weight: 700;
+  color: var(--brand-ink);
+}
+.workflow-list p {
+  color: #6e8575;
+}
+.workflow-list > article > svg {
+  color: var(--brand-text-green);
+}
+.connected-suite {
+  background: var(--brand-ink);
+}
+.connected-suite .saas-kicker {
+  color: var(--brand-green);
+}
+.connected-suite h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 42px;
+}
+.connected-suite p {
+  color: #b3c9bb;
+  font-size: 14px;
+}
+.connected-suite .saas-text-link {
+  color: var(--brand-green);
+}
+.orbit-ring {
+  border-color: #66bf8360;
+}
+.orbit-product {
+  border-color: #66bf8340;
+  border-radius: 10px;
+}
+.orbit-product.current {
+  border: 2px solid var(--brand-green);
+}
+.orbit-product > span {
+  background: var(--brand-tint);
+  color: var(--brand-text-green);
+}
+.orbit-product > b {
+  color: var(--brand-ink);
+  font-weight: 700;
+}
+.product-faq h2 {
+  font-weight: 700;
+  font-size: 42px;
+}
+.product-faq summary {
+  color: var(--brand-ink);
+  font-weight: 500;
+}
+.product-faq summary > span {
+  color: var(--brand-text-green);
+}
+.product-faq details > p {
+  color: #647e6d;
+  font-size: 13px;
+}
+.product-final-cta {
+  background: var(--brand-ink);
+  border-color: var(--brand-ink);
+  border-radius: 20px;
+  padding: 75px 30px;
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+}
+.product-final-cta:after {
+  content: "";
+  position: absolute;
+  right: -90px;
+  bottom: -135px;
+  width: 350px;
+  height: 350px;
+  border: 40px solid #66bf8310;
+  border-radius: 50%;
+  z-index: -1;
+}
+.product-final-cta .saas-kicker {
+  color: var(--brand-green);
+}
+.product-final-cta h2 {
+  color: #fff;
+  font-size: clamp(38px, 4vw, 56px);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -1.8px;
+}
+.product-final-cta p {
+  color: #b5cabc;
+  font-size: 15px;
+}
+.product-final-cta > .product-mark {
+  background: var(--brand-green);
+  color: var(--brand-ink);
+}
+@media (max-width: 1100px) {
+  .nav-links {
+    gap: 15px;
+  }
+  .suite-product-card {
+    padding: 24px 18px 20px;
+  }
+  .suite-product-card h2 {
+    font-size: 30px;
+  }
+  .suite-product-card > p {
+    font-size: 12px;
+  }
+  .saas-feature-grid > article {
+    padding: 25px;
+  }
+  .saas-feature-grid {
+    gap: 18px;
+  }
+  .saas-feature-grid h3 {
+    font-size: 19px;
+  }
+  .hero-brand-art {
+    right: -120px;
+    width: 380px;
+    height: 380px;
+  }
+  .product-benefit-strip h3 {
+    font-size: 12px;
+  }
+  .product-benefit-strip p {
+    font-size: 9px;
+  }
+}
+@media (max-width: 800px) {
+  .suite-hero {
+    padding: 65px 30px 55px;
+  }
+  .suite-hero h1 {
+    font-size: 72px;
+  }
+  .suite-product-card > p {
+    min-height: 0;
+  }
+  .product-benefit-strip h3 {
+    font-size: 14px;
+  }
+  .product-benefit-strip p {
+    font-size: 11px;
+  }
+  .connected-suite h2 {
+    font-size: 35px;
+  }
+  .suite-value-grid {
+    gap: 30px;
+  }
+  .suite-value-grid h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 760px) {
+  .nav {
+    height: 72px;
+  }
+  .logo .full-brand-logo {
+    width: 133px;
+    height: 31px;
+  }
+  .mega-menu {
+    top: auto;
+  }
+  .nav-scrim {
+    inset: 72px 0 0;
+  }
+  .product-subnav {
+    top: 72px;
+  }
+  .suite-hero {
+    margin-top: 14px;
+    border-radius: 17px;
+    padding: 45px 18px 40px;
+  }
+  .suite-hero-label {
+    font-size: 7px;
+    letter-spacing: 1px;
+    padding: 7px 10px;
+  }
+  .suite-hero h1 {
+    font-size: clamp(47px, 11vw, 68px);
+    letter-spacing: -2px;
+    line-height: 1.03;
+    margin: 26px 0 22px;
+  }
+  .suite-hero > p {
+    font-size: 14px;
+    max-width: 400px;
+  }
+  .hero-brand-art {
+    right: -125px;
+    width: 310px;
+    height: 310px;
+    opacity: 0.07;
+  }
+  .saas-button {
+    font-size: 11px;
+    padding: 14px 18px;
+    gap: 12px;
+  }
+  .suite-hero .saas-actions {
+    margin-top: 25px;
+    gap: 10px;
+  }
+  .suite-hero-line {
+    margin-top: 27px;
+  }
+  .suite-product-cards {
+    margin-top: 20px;
+    gap: 14px;
+  }
+  .suite-product-card {
+    border-top-width: 3px;
+    padding: 20px 16px 18px;
+    border-radius: 11px;
+  }
+  .suite-product-card h2 {
+    font-size: 28px;
+  }
+  .suite-card-top .product-mark {
+    width: 43px;
+    height: 43px;
+  }
+  .suite-card-top {
+    margin-bottom: 17px;
+  }
+  .suite-card-label {
+    font-size: 8px;
+  }
+  .suite-product-card > p {
+    font-size: 11px;
+    min-height: 40px;
+  }
+  .suite-card-link {
+    font-size: 10px;
+  }
+  .mini-product {
+    height: 130px;
+  }
+  .saas-product h2 {
+    font-size: 35px;
+  }
+  .suite-preview-tabs > button {
+    font-size: 10px;
+    padding: 11px 14px;
+    gap: 7px;
+  }
+  .suite-values {
+    padding-block: 60px;
+  }
+  .suite-values h2 {
+    font-size: 36px;
+  }
+  .suite-value-grid article {
+    padding-top: 22px;
+    gap: 0 15px;
+  }
+  .suite-value-grid article > svg {
+    margin: 3px 0 0;
+  }
+  .suite-value-grid h3 {
+    font-size: 20px;
+  }
+  .suite-value-grid p {
+    font-size: 13px;
+  }
+  .home-services-clean h2 {
+    font-size: 36px;
+  }
+  .home-services-clean > div > p {
+    font-size: 13px;
+  }
+  .home-services-clean > div + div > a {
+    font-size: 17px;
+    padding: 23px 0;
+  }
+  .product-hero {
+    padding-top: 45px;
+    padding-bottom: 40px;
+  }
+  .product-eyebrow {
+    font-size: 7px;
+    gap: 7px;
+    letter-spacing: 0.6px;
+  }
+  .product-hero h1 {
+    font-size: clamp(38px, 8vw, 54px);
+    letter-spacing: -1.4px;
+    line-height: 1.08;
+    margin: 25px 0;
+  }
+  .product-hero h1 > .accent-line {
+    padding-inline: 3px;
+  }
+  .product-hero > p {
+    font-size: 14px;
+  }
+  .hero-assurance {
+    font-size: 8px;
+    gap: 12px;
+  }
+  .dashboard-section:before {
+    inset: 25px -8px 60px;
+    border-radius: 14px;
+  }
+  .dashboard-top-label {
+    font-size: 8px;
+  }
+  .dashboard-top-label > span + span {
+    font-size: 9px;
+  }
+  .dashboard-caption {
+    font-size: 8px !important;
+  }
+  .product-benefit-strip {
+    padding-block: 40px;
+  }
+  .product-benefit-strip h3 {
+    font-size: 13px;
+  }
+  .product-benefit-strip p {
+    font-size: 10px;
+  }
+  .saas-feature-grid {
+    gap: 15px;
+  }
+  .saas-feature-grid > article {
+    padding: 21px 17px;
+  }
+  .saas-feature-grid h3 {
+    font-size: 17px;
+    letter-spacing: -0.3px;
+  }
+  .saas-feature-grid p {
+    font-size: 11px;
+  }
+  .feature-icon {
+    width: 43px;
+    height: 43px;
+    border-radius: 10px;
+  }
+  .saas-section-heading h2 {
+    font-size: 35px;
+  }
+  .saas-kicker {
+    font-size: 8px;
+  }
+  .workflow-list > article {
+    gap: 15px;
+  }
+  .workflow-list h3 {
+    font-size: 18px;
+  }
+  .workflow-list > article > span {
+    width: 31px;
+    height: 31px;
+    font-size: 10px;
+  }
+  .workflow-list p {
+    font-size: 12px;
+  }
+  .connected-suite h2 {
+    font-size: 35px;
+  }
+  .connected-suite p {
+    font-size: 13px;
+  }
+  .product-faq h2 {
+    font-size: 35px;
+  }
+  .product-faq details > p {
+    font-size: 12px;
+  }
+  .product-final-cta {
+    padding: 50px 20px;
+    border-radius: 16px;
+  }
+  .product-final-cta h2 {
+    font-size: 36px;
+    letter-spacing: -1.3px;
+  }
+  .product-final-cta p {
+    font-size: 13px;
+  }
+  .product-final-cta .saas-kicker {
+    font-size: 7px;
+  }
+  .product-final-cta:after {
+    width: 200px;
+    height: 200px;
+    right: -100px;
+    bottom: -120px;
+  }
+  .saas-feature-grid > article:hover {
+    transform: none;
+  }
+}
+@media (max-width: 390px) {
+  .suite-hero {
+    padding-inline: 15px;
+  }
+  .suite-hero h1 {
+    font-size: 46px;
+  }
+  .suite-hero > p {
+    font-size: 13px;
+  }
+  .suite-product-cards {
+    gap: 11px;
+  }
+  .suite-product-card {
+    padding: 18px 13px 16px;
+  }
+  .suite-product-card h2 {
+    font-size: 25px;
+  }
+  .suite-card-label {
+    font-size: 7px;
+  }
+  .suite-product-card > p {
+    font-size: 10px;
+    min-height: 50px;
+  }
+  .suite-card-link {
+    font-size: 9px;
+  }
+  .suite-preview-tabs > button {
+    padding: 10px 11px;
+    font-size: 9px;
+    gap: 5px;
+  }
+  .product-hero h1 {
+    font-size: 37px;
+  }
+  .product-eyebrow {
+    font-size: 6px;
+  }
+  .saas-feature-grid {
+    gap: 12px;
+  }
+  .saas-feature-grid > article {
+    padding: 18px 13px;
+  }
+  .saas-feature-grid h3 {
+    font-size: 16px;
+  }
+  .saas-feature-grid p {
+    font-size: 10px;
+  }
+  .product-final-cta h2 {
+    font-size: 33px;
+  }
+  .suite-values h2 {
+    font-size: 33px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .saas-feature-grid > article:hover,
+  .suite-product-card:hover {
+    transform: none;
+  }
+  .saas-feature-grid > article {
+    transition: none;
+  }
+}

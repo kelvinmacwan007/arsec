@@ -1,0 +1,2 @@
+:root { --ground:#f7f6f2; --ink:#14231c; --muted:#66716b; --accent:#0b6b47; --mint:#6fd3a4; --line:#e3e0d6; --white:#fff; --radius-card:24px; --radius-pill:999px; --section-space:7rem; --max:1280px; }
+@media (max-width: 800px) { :root { --section-space:5rem; } }

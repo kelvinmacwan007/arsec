@@ -1,0 +1,3 @@
+'use client';
+import { useEffect, useRef } from 'react';
+export function useReveal<T extends HTMLElement>() { const ref=useRef<T>(null); useEffect(()=>{const el=ref.current;if(!el)return; const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches; if(reduced){el.style.opacity='1';return;} const observer=new IntersectionObserver(([entry])=>{if(entry.isIntersecting){el.animate([{opacity:0,transform:'translateY(24px)'},{opacity:1,transform:'translateY(0)'}],{duration:900,easing:'cubic-bezier(.22,1,.36,1)',fill:'forwards'});observer.disconnect();}},{threshold:.12});observer.observe(el);return()=>observer.disconnect();},[]); return ref; }

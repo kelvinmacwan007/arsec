@@ -1,0 +1,3 @@
+'use client';
+import {useState} from 'react';
+export function Accordion({question,answer}:{question:string;answer:string}){const [open,setOpen]=useState(false);return <div className="rule"><button className="focus-ring flex w-full items-center justify-between py-6 text-left text-lg font-medium" aria-expanded={open} onClick={()=>setOpen(!open)}><span>{question}</span><span className={`text-2xl transition-transform ${open?'rotate-45':''}`}>+</span></button><div className={`grid transition-[grid-template-rows] duration-500 ${open?'grid-rows-[1fr]':'grid-rows-[0fr]'}`}><div className="overflow-hidden"><p className="max-w-2xl pb-6 leading-7 text-muted">{answer}</p></div></div></div>}

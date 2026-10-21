@@ -1,0 +1,2 @@
+﻿import Link from 'next/link';
+export default function NotFound(){return <main id="main" className="wrap section"><p className="section-label">404 / Page not found</p><h1 style={{fontSize:'clamp(40px,6vw,70px)',fontWeight:500,letterSpacing:'-2px'}}>Let’s find your way back.</h1><p className="body-copy">This page doesn’t exist. Explore Arsec’s products and services or return to the homepage.</p><Link href="/" className="button">Back to Arsec <span>↗</span></Link></main>}
